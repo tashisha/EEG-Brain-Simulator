@@ -5,12 +5,12 @@ Thereby allowing reseachers to freely explore their own EEG simulations.
 This project was made for the lab SPECS as my master's thesis for the Cognitive Systems & Interacive Media masters program 
 at the Unveristy of Pompeu Fabra in Barcelona, Spain.
 
-If you just want to try out EEG Brain Simulator with it's default data set then go ahead and download the "Brain_Visualization_Beta_App".
-Open the Unity scene and BAM! you're using the app.
-If you wan to use your own dataset with the app keep reading, you're in for a fun ride :)
+If you just want to try out EEG Brain Simulator with it's default data set then go ahead and download the Windows or Mac EEG Interactive Visualization Final.Open the Unity scene and BAM! you're using the app.
+
+If you wan to use your own dataset with the app keep reading, altough be aware that this system is a proof of concept. Which means that the process for uploading you own dataset is very dififcult and requires the use of both Python and Unity. 
 
 There are 3 Section to this guide, PROPER JSON FILE FORMAT, UPLOADING YOUR FORMATTED DATA and TRANSLATING MNI COORDINATES INTO UNITY.
-The last section may require some neuroscience knoweldge to do correctly (hey at least it's not rocket science).
+The last section may require some neuroscience knowledge to do correctly.
 
 
 # PROPER JSON FILE FORMAT
@@ -90,12 +90,5 @@ If you want to translate your own MNI brain data into a readable Json file you c
    This file will give you sequantial time series EEG data based off your data and put it in the required "Timestamp" format. 
    
    Congragulations! you re now a neuroscientist! 
-   
-
-Currently I am still perfecting how to ideally translate MNI data to the Json file formate required for the visualiztion to be accurate.
-I will be editing this file and posting more complete instructions for how to translate your MNI coordinates
-into the proper Unity format using my Python scripts once I have perfected the process.
-
-I am also stil adding basic features such as a start screen, which is why the EEG Brain Simulator is still in beta mode. 
 
 Happy neurosciencing :)
