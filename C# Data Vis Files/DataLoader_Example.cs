@@ -1,14 +1,17 @@
+// In Unity you always start by importing all the Unity libraries you need
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class DataLoader : MonoBehaviour {
+//Import the Data Visualizer object that the data visualizer script is attatched to as Visualizer
     public DataVisualizer Visualizer;
-   // public DataViz Visualizer;
+
     // Use this for initialization
     void Start ()
 
     {
+	 //Access the Unity scenes through the scene manager, using the function .GetActiveScene()
         Scene scene = SceneManager.GetActiveScene();
 
         //loads selected json data set corrleating with correct scene
@@ -50,9 +53,11 @@ public class DataLoader : MonoBehaviour {
 	
 	}
 }
+//Down here we are accessing the SeriesArray class that is storeed in the Data Visualizer script. 
 [System.Serializable]
 public class SeriesArray
 {
     // makes the AllData public and avaliable to all classes. 
+	// We need to access the SeriesData variable to access and change the data used within the instaited mesh. 
     public SeriesData[] AllData;
 }
